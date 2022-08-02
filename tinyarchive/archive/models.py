@@ -60,9 +60,32 @@ class Artifact(ArchiveDocument):
                         (MAT_PLASTIC, "Plastic"),
                         (MAT_CERAMIC, "Ceramic"),
                         (MAT_GLASS, "Glass")]
+    DEVELOPER_CHOICES = [(DEVELOPER_NINTENDO, "Nintendo"),
+                        (DEVELOPER_MICROSOFT, "Microsoft"),
+                        (DEVELOPER_META, "Meta"),
+                        (DEVELOPER_SONY, "Sony Computer Entertainment")]
+    developer = models.CharField(
+        max_length=50, choices=DEVELOPER_CHOICES, default=DEVELOPER_NINTENDO)
     material = models.CharField(
         max_length=50, choices=MATERIAL_CHOICES, default=MAT_GLASS)
     model3d = models.URLField(max_length=500, blank="True")
+    releaseDate = models.CharField(max_length=20)
+    manufacturer = models.CharField(max_length=200) 
+    discontinuedDate = models.CharField(max_length=20)
+    hardware = models.CharField(max_length=200)
+    software =models.CharField(max_length=200)
+    generation = models.CharField(max_length = 200)
+    consoleType = models.CharField(max_length = 200)
+    operatingSystem = models.CharField(max_length = 200)
+    dimensions =models.CharField(max_length = 200)
+    gpu = models.CharField(max_length = 200)
+    cpu = models.CharField(max_length = 200)
+    price = models.CharField(max_length = 200)
+    memory =models.CharField(max_length = 200)
+    storage = models.CharField(max_length = 200)
+    connectivity =models.CharField(max_length = 200)
+    bestSellingGame =models.CharField(max_length = 200)
+    unitsSold = models.CharField(max_length = 200)
 
 
 class Document(ArchiveDocument):
