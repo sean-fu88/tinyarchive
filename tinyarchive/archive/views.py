@@ -74,6 +74,24 @@ def item_detail(request, item_id):
         elif isinstance(archive_item, Artifact):
             context["item"]["material"] = archive_item.material
             context["item"]["3dmodel"] = archive_item.model3d
+            context["item"]["developer"] = archive_item.developer
+            context["item"]["releaseDate"] = archive_item.releaseDate
+            context["item"]["manufacturer"] = archive_item.manufacturer
+            context["item"]["discontinuedDate"] = archive_item.discontinuedDate
+            context["item"]["hardware"] = archive_item.hardware
+            context["item"]["software"] = archive_item.software
+            context["item"]["generation"] = archive_item.generation
+            context["item"]["consoleType"] = archive_item.consoleType
+            context["item"]["operatingSystem"] = archive_item.operatingSystem
+            context["item"]["dimensions"] = archive_item.dimensions
+            context["item"]["gpu"] = archive_item.gpu
+            context["item"]["cpu"] = archive_item.cpu
+            context["item"]["price"] = archive_item.price
+            context["item"]["memory"] = archive_item.memory
+            context["item"]["storage"] = archive_item.storage
+            context["item"]["connectivity"] = archive_item.connectivity
+            context["item"]["bestSellingGame"] = archive_item.bestSellingGame
+            context["item"]["unitsSold"] = archive_item.unitsSold
             template_to_render = "archive/item_artifact.html"
         else:
             context["item"]["transcription"] = archive_item.transcription
