@@ -57,6 +57,11 @@ class Artifact(ArchiveDocument):
     MAT_GLASS = 'glass'
     MAT_METAL = 'metal'
 
+    DEVELOPER_NINTENDO = 'nintendo'
+    DEVELOPER_MICROSOFT = 'microsoft'
+    DEVELOPER_META = 'meta'
+    DEVELOPER_SONY = 'sony computer entertainment'
+
     MATERIAL_CHOICES = [(MAT_OTHER, "Other"),
                         (MAT_PLASTIC, "Plastic"),
                         (MAT_CERAMIC, "Ceramic"),
