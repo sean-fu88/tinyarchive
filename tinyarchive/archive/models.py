@@ -60,18 +60,15 @@ class Artifact(ArchiveDocument):
     MATERIAL_CHOICES = [(MAT_OTHER, "Other"),
                         (MAT_PLASTIC, "Plastic"),
                         (MAT_CERAMIC, "Ceramic"),
-<<<<<<< HEAD
-                        (MAT_GLASS, "Glass")]
+                        (MAT_GLASS, "Glass"),
+                        (MAT_METAL,"Metal")]
+    
     DEVELOPER_CHOICES = [(DEVELOPER_NINTENDO, "Nintendo"),
                         (DEVELOPER_MICROSOFT, "Microsoft"),
                         (DEVELOPER_META, "Meta"),
                         (DEVELOPER_SONY, "Sony Computer Entertainment")]
     developer = models.CharField(
         max_length=50, choices=DEVELOPER_CHOICES, default=DEVELOPER_NINTENDO)
-=======
-                        (MAT_GLASS, "Glass"),
-                        (MAT_METAL,"Metal")]
->>>>>>> e3ef28578d8e63b104e7ae898ebca8df3335e08e
     material = models.CharField(
         max_length=50, choices=MATERIAL_CHOICES, default=MAT_GLASS)
     model3d = models.URLField(max_length=500, blank="True")
