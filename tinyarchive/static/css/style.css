@@ -1,21 +1,24 @@
 h1{
-    color:#e4e4e7;
+    color:#f0ed2c;
     font-family: 'Press Start 2P',sans-serif;
     font-size:larger;
     margin-left: 5% ;
     font-size: 27px ;
+    text-shadow: 0 0 6px purple, 0 0 10px violet;
 }
 
 .intro {
     font-family:'Press Start 2P' ;
     color: #e4e4e7;
-    margin-left: 2% ;
+    margin-left: 1% ;
     font-size: 13px;
+    text-shadow: 0 0 3px purple, 0 0 5px violet;
 }
 
 ul{
     font-family: 'Press Start 2P';
     color: #e4e4e7;
+    text-shadow: 0 0 3px purple, 0 0 5px violet;
 
 }
 
