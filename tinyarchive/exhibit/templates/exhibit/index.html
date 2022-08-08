@@ -1,24 +1,28 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="breadcrumb">
-    <a href="/"> Tiny Library </a>
-</div>
-<div class="page_title">
-    Exhibits
-</div>
-<div class="content">
-    {% if exhibits %}
-    <ul>
-        {% for exhibit in exhibits %}
-        <li>
-            <div class="exhibit"><a href="{{exhibit.id}}">{{exhibit.name}} </a> : {{exhibit.snippet}} </div>
-        </li>
-        {% endfor %}
-    </ul>
-    {% else %}
-    <p>No exhibits yet!</p>
-    {% endif %}
+
+<div class="sangwon">
+    <div class="breadcrumbb">
+        <a href="/"> Back To The Homepage </a>
+    </div>
+    <div class="page_title2">
+        Exhibits
+    </div>
+    <div class="content1">
+        {% if exhibits %}
+        <ul>
+            {% for exhibit in exhibits %}
+            <li>
+                <div class="exhibit"><a href="{{exhibit.id}}">{{exhibit.name}} </a> : {{exhibit.snippet}} </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No exhibits yet!</p>
+        {% endif %}
+    </div>
+    
 </div>
 
 {% endblock %}

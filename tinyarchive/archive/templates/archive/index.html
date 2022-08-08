@@ -1,39 +1,45 @@
-{% extends 'base.html' %}
+
 {% load static %}
 {% block content %}
-<div class="breadcrumb">
-    <a href="/"> Tiny Library  </a>
-</div>
-<div class="page_title">
-    Video Game consoles
-</div>
 
+<link rel="stylesheet" href="{% static 'csss/index.css' %}"/>
 
-<div class="content">
-    {% if archive_items %}
-    <table>
-        <thead>
-            <th> Preview </th>
-            <th> Name </th>
-            <th> Description </th>
-        </thead>
-        <tbody>
-            {% for item in archive_items %}
-            <tr>
-                {% if item.thumbnail %}
-                    <td><a href="{{item.id}}"><img src="{% get_media_prefix %}{{item.thumbnail}}"></td>
-                {% else %}
-                    <td></td>
-                {% endif %}
-                <td><a href="{{item.id}}">{{item.name}}</a></td>
-                <td>{{item.description}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No items in the archive yet!</p>
-    {% endif %}
-</div>
+<body>
+    <img src="Sangwon1.jpg" alt="console">
+</body>
 
+    <div class="breadcrumb">
+        <a href="/"> Back To The Homepage  </a>
+    </div>
+    <div class="page_title">
+        Index
+    </div>
+    
+    <div class="content">
+        {% if archive_items %}
+        <table>
+            <thead>
+                <th> Preview </th>
+                <th> Name </th>
+                <th> Description </th>
+            </thead>
+            <tbody>
+                {% for item in archive_items %}
+                <tr>
+                    {% if item.thumbnail %}
+                        <td><a href="{{item.id}}"><img src="{% get_media_prefix %}{{item.thumbnail}}"></td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
+                    <td><a href="{{item.id}}">{{item.name}}</a></td>
+                    <td>{{item.description}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No items in the archive yet!</p>
+        {% endif %}
+    </div>
+   
 {% endblock %}

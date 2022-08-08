@@ -36,8 +36,8 @@ a:visited {
 body{ 
     background-color: #2b1f37;
     padding-top: 20%;
-    background-image: url('giphy.gif');
-    margin: auto;
+    background-image: url('giphy.gif');    
+    margin: auto; 
 }
 
 .boxed {
@@ -50,3 +50,4 @@ body{
     background-color: black;
     padding-left: 5%;
 }
+
