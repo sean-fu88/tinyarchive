@@ -72,7 +72,6 @@ def item_detail(request, item_id):
             ]
             template_to_render = "archive/item_photograph.html"
         elif isinstance(archive_item, Artifact):
-            context["item"]["material"] = archive_item.material
             context["item"]["3dmodel"] = archive_item.model3d
             context["item"]["developer"] = archive_item.developer
             context["item"]["releaseDate"] = archive_item.releaseDate
