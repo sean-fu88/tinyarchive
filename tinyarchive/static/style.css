@@ -1,9 +1,8 @@
 h1{
     color:#e4e4e7;
     font-family: 'Press Start 2P',sans-serif;
-    font-size:larger
     margin-left: 17%
-    margin-right: 17%;
+    margin-right: 17%
 }
 
 .intro {
@@ -48,3 +47,7 @@ body{
 }
 
 body 
+
+.breadcrumb {
+    font-family: 'Courier New', Courier, monospace;
+}
