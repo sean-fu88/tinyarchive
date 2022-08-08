@@ -2,14 +2,15 @@ h1{
     color:#e4e4e7;
     font-family: 'Press Start 2P',sans-serif;
     font-size:larger;
-    margin-left: 17%
-    margin-right: 17%;
+    margin-left: 5% ;
+    font-size: 27px ;
 }
 
 .intro {
     font-family:'Press Start 2P' ;
     color: #e4e4e7;
-    margin-left: 13%
+    margin-left: 2% ;
+    font-size: 13px;
 }
 
 ul{
@@ -46,5 +47,3 @@ body{
     background-color: black;
     padding-left: 5%;
 }
-
-body 
