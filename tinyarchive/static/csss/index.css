@@ -94,3 +94,15 @@ table {
     margin-left: -40%;
     padding: 30px;
 }
+
+.info {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px ; 
+    color: antiquewhite;
+    margin: 30px;
+}
+
+li {
+    font-family: 'Press Start 2P';
+    color: #e4e4e7;
+}
