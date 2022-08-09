@@ -1,16 +1,22 @@
-{% extends 'base.html' %}
+
 {% load static %}
 {% block content %}
-<div class="page_title">
-   <h1> The Tiny Library </h1>
-</div>
-<div class="intro">
-    We are happy to meet you! We are small, but still growing.
-</div>
-<ul>
-    <li><a href="archive/">Archives</a> </li>
-    <li> <a href="exhibit/"> Exhibits </a></li>
-    <li> About Us </li>
-</ul>
+<link rel="stylesheet" href="{% static 'css/home.css' %}"/>
 
+<img src="giphy.gif" onerror="this.style.display='none'"/>
+<body>
+    <div class="boxed">
+    <div class="page_title">
+            <h1>🎮 Video Game Consoles 👾</h1>
+    </div>
+    <div class="intro">
+         Come and explore the evolution of video game with us...
+    </div>
+        <ul>
+            <li><a href="archive/">Archives</a> </li>
+            <li> <a href="exhibit/"> Exhibits </a></li>
+            <li> About Us </li>
+        </ul>
+    </div>
+</body>
 {% endblock %}

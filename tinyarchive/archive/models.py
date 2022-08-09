@@ -51,22 +51,11 @@ class Photograph(ArchiveDocument):
 
 
 class Artifact(ArchiveDocument):
-    MAT_OTHER = 'other'
-    MAT_PLASTIC = 'plastic'
-    MAT_CERAMIC = 'ceramic'
-    MAT_GLASS = 'glass'
-    MAT_METAL = 'metal'
 
     DEVELOPER_NINTENDO = 'nintendo'
     DEVELOPER_MICROSOFT = 'microsoft'
     DEVELOPER_META = 'meta'
     DEVELOPER_SONY = 'sony computer entertainment'
-
-    MATERIAL_CHOICES = [(MAT_OTHER, "Other"),
-                        (MAT_PLASTIC, "Plastic"),
-                        (MAT_CERAMIC, "Ceramic"),
-                        (MAT_GLASS, "Glass"),
-                        (MAT_METAL,"Metal")]
     
     DEVELOPER_CHOICES = [(DEVELOPER_NINTENDO, "Nintendo"),
                         (DEVELOPER_MICROSOFT, "Microsoft"),
@@ -74,8 +63,6 @@ class Artifact(ArchiveDocument):
                         (DEVELOPER_SONY, "Sony Computer Entertainment")]
     developer = models.CharField(
         max_length=50, choices=DEVELOPER_CHOICES, default=DEVELOPER_NINTENDO)
-    material = models.CharField(
-        max_length=50, choices=MATERIAL_CHOICES, default=MAT_GLASS)
     model3d = models.URLField(max_length=500, blank="True")
     releaseDate = models.CharField(max_length=20, default= "N/a")
     manufacturer = models.CharField(max_length=200, default= "N/a") 

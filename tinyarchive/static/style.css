@@ -1,0 +1,49 @@
+h1{
+    color:#e4e4e7;
+    font-family: 'Press Start 2P',sans-serif;
+    margin-left: 17%
+    margin-right: 17%
+}
+
+.intro {
+    font-family:'Press Start 2P' ;
+    color: #e4e4e7;
+    margin-left: 13%
+}
+
+ul{
+    font-family: 'Press Start 2P';
+    color: #e4e4e7;
+
+}
+
+li {
+    color: #a78bfa;
+    line-height: 40px;
+    margin-left: 32%;
+}
+
+a:visited { 
+    color: #a78bfa;
+
+}
+
+body{ 
+    background-color: #2b1f37;
+    padding-top: 20%;
+    background-image: url('giphy.gif');
+    margin: auto;
+}
+
+.boxed {
+    border: 7px solid rgb(201, 123, 245);
+    width: 30%;
+    padding: 2%;
+    margin: auto;
+    margin-left: 29%;
+    margin-right: 29%;
+    background-color: black;
+    padding-left: 5%;
+}
+
+body 

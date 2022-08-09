@@ -1,0 +1,108 @@
+
+body {
+    background-image: url('Sangwon1.jpg') ;
+    background-repeat: no-repeat ;
+    background-size: 100%;
+    margin: auto;
+}
+
+.breadcrumb  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: auto;
+    font-size: 20px;
+}
+
+a:visited {
+    color: rgb(81, 255, 133);
+}
+
+a:link {
+    color: antiquewhite;
+}
+
+.page_title {
+    font-family: 'Press Start 2P',sans-serif ;
+    margin: auto;
+    font-size: 35px;
+    color:#f0ed2c ;
+    padding: 40px;
+    margin-left: 45%;
+    text-shadow: 0 0 6px purple, 0 0 10px violet
+
+}
+
+thead {
+    font-family: 'Press Start 2P',sans-serif ;
+    font-weight:lighter;
+    margin: 50px %;
+    padding: 100px;
+    font-size: 30px;
+    color:#f0ed2c ; 
+    text-shadow: 0 0 6px purple, 0 0 10px violet
+}
+
+table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 25px;
+    font-weight: lighter;
+    margin: auto; 
+    color: antiquewhite;
+    border-spacing: 15px;
+}
+
+.transcription {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px ; 
+    color: antiquewhite;
+    margin: 30px;
+}
+
+.exhibit_text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px ; 
+    color: antiquewhite;
+    margin: 30px;
+}
+
+.exhibit_items {
+    margin-left: -110% ;
+}
+
+.href {
+    margin-left: 50px ;
+}
+
+.breadcrumbb  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: 20px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.page_title2 {
+    font-family: 'Press Start 2P',sans-serif ;
+    font-size: 35px;
+    color:#f0ed2c ;
+    padding: 10px;
+    text-shadow: 0 0 6px purple, 0 0 10px violet;
+    margin-left: 45%; ;
+}
+
+.content1 {
+    color: #a78bfa;
+    line-height: 30px;
+    margin-left: -40%;
+    padding: 30px;
+}
+
+.info {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px ; 
+    color: antiquewhite;
+    margin: 30px;
+}
+
+li {
+    font-family: 'Press Start 2P';
+    color: #e4e4e7;
+}
